@@ -6,7 +6,8 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
-import br.com.josias.kafka.producer.controller.CarDTO;
+import br.com.josias.kafka.model.dto.CarDTO;
+
 
 @Service
 public class CarProducer {

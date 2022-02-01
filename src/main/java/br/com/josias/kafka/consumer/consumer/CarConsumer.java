@@ -7,7 +7,8 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Component;
 
-import br.com.josias.kafka.producer.controller.CarDTO;
+import br.com.josias.kafka.model.dto.CarDTO;
+
 
 @Component
 public class CarConsumer {

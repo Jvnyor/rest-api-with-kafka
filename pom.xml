@@ -45,10 +45,10 @@
         
         <!--https://mvnrepository.com/artifact/com.h2database/h2-->
         
-		<!-- <dependency>
+		<dependency>
 		    <groupId>com.h2database</groupId>
 		    <artifactId>h2</artifactId>
-		</dependency>-->
+		</dependency>
 		
 		<dependency>
       		<groupId>mysql</groupId>

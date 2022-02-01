@@ -13,14 +13,17 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.josias.kafka.model.Car;
+import br.com.josias.kafka.model.dto.CarDTO;
 import br.com.josias.kafka.producer.producer.CarProducer;
 import br.com.josias.kafka.repository.CarRepository;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import lombok.extern.slf4j.Slf4j;
 
 @RestController
 @Api(value = "Kafka resources")
 @CrossOrigin("*")
+@Slf4j
 public class CarController {
 	@Autowired
 	private CarRepository carRepository;
@@ -34,7 +37,7 @@ public class CarController {
         CarDTO car = CarDTO.builder().id(UUID.randomUUID().toString()).color(carDTO.getColor()).model(carDTO.getModel()).build();
         carProducer.send(car);
         add(carAdd, carDTO);
-        System.out.println("Id carDTO: " + carDTO.getId());
+        log.info("Id carDTO: {}",carDTO.getId());
         // ^ retornando null
         return ResponseEntity.status(HttpStatus.CREATED).body(car);
     }

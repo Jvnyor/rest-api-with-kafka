@@ -10,7 +10,7 @@ import org.springframework.kafka.core.ConsumerFactory;
 import org.springframework.kafka.core.DefaultKafkaConsumerFactory;
 import org.springframework.kafka.support.serializer.JsonDeserializer;
 
-import br.com.josias.kafka.consumer.DTO.CarDTO;
+import br.com.josias.kafka.model.dto.CarDTO;
 
 import java.util.HashMap;
 import java.util.Map;

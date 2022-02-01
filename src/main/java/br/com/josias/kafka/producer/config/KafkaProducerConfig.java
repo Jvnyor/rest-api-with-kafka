@@ -11,7 +11,7 @@ import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.core.ProducerFactory;
 import org.springframework.kafka.support.serializer.JsonSerializer;
 
-import br.com.josias.kafka.producer.controller.CarDTO;
+import br.com.josias.kafka.model.dto.CarDTO;
 
 import java.util.HashMap;
 import java.util.Map;

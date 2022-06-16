@@ -1,10 +1,10 @@
-package br.com.josias.test;
+package com.Jvnyor.kafka;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TestApplicationTests {
+class KafkaApplicationTests {
 
 	@Test
 	void contextLoads() {

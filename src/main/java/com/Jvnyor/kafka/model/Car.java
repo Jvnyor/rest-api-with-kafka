@@ -1,4 +1,4 @@
-package br.com.josias.kafka.model;
+package com.Jvnyor.kafka.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -10,6 +10,7 @@ import javax.persistence.Table;
 import com.sun.istack.NotNull;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -18,6 +19,7 @@ import lombok.NoArgsConstructor;
 @Data
 @Entity
 @Table(name = "car")
+@Builder
 public class Car {
 
 	@Id
@@ -25,13 +27,13 @@ public class Car {
 	@NotNull
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	
+
 	@Column(name = "model")
 	@NotNull
 	private String model;
-	
+
 	@Column(name = "color")
 	@NotNull
 	private String color;
-	
+
 }

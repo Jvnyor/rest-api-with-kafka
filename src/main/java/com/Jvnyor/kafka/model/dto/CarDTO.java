@@ -1,4 +1,4 @@
-package br.com.josias.kafka.model.dto;
+package com.Jvnyor.kafka.model.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -1,4 +1,4 @@
-package br.com.josias.kafka.consumer.consumer;
+package com.Jvnyor.kafka.consumer.consumer;
 
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.slf4j.Logger;
@@ -7,8 +7,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Component;
 
-import br.com.josias.kafka.model.dto.CarDTO;
-
+import com.Jvnyor.kafka.model.dto.CarDTO;
 
 @Component
 public class CarConsumer {
